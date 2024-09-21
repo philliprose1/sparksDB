@@ -1,8 +1,11 @@
-/*
+
 var cdn = document.createElement('script');
 cdn.setAttribute('src','https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js');
 document.head.appendChild(cdn);
-*/
+var pop = document.getElementById("popSound") 
+function popSound() {
+    pop.play();
+}
 
 //date for table
 const y = new Date();
@@ -799,4 +802,10 @@ function copyTable(){
 
     navigator.clipboard.writeText(val.value)
     document.getElementById('clipboard').innerHTML = val.value;
+    popSound();
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      }); 
 }

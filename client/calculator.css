@@ -11,6 +11,12 @@ h1 {
     color:limegreen;
     text-shadow: 1px 1px 1px blue;;
 }
+h3 {
+  color:limegreen;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: gray;
+  padding: .5em;
+}
 .calTitle {
   color:limegreen;
   background-color: black;

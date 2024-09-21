@@ -1,5 +1,5 @@
 // Get Top Scores from database
-fetch('http://localhost:3000/blogs/outages')
+fetch('https://sparks-db.vercel.app/blogs/outages')
 .then(function (response) {
     return response.json();
 })
