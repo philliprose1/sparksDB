@@ -17,7 +17,9 @@ app.set('view engine', 'ejs');
 
 
 //middleware for public static files
+app.use(express.static(__dirname + "/public")) ; //for vercel error
 app.use(express.static('public')); //files made available to the front end
+
 app.use(express.urlencoded({extended: true})); // now you can use req.body in app.post request (for info in webform) need name attribute and action POST on create.ejs
 
 //render JSON to an endpoint  
