@@ -12,6 +12,7 @@ mongoose.connect(db)
 .catch((err) => console.log(err));
 
 //add view engine
+app.set("views",__dirname + "/views") // __dirname needed for vercel
 app.set('view engine', 'ejs');
 
 
