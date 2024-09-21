@@ -1,0 +1,52 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %> <!-- head.js found in partials folder-->
+<body>
+  <div class="title">
+    <h1>Update Product Status</h1>
+   </div> 
+    <%- include('./partials/nav.ejs') %> <!-- nav.js found in partials folder-->
+<div class="bg">
+    <div class="create-content">
+      <form > 
+        <div class="center-label">
+            <label for="title">Name :</label>
+            <input type="text" placeholder=" Your Name" id="title" name="title" required>
+        </div>
+        <div class="center-label">
+            <label for="snippet">Tagline :</label>
+            <input type="text" placeholder=" Description" id="snippet" name="snippet" required>
+        </div>
+        <div class="center">
+            <label for="body">Content :</label>
+        </div>
+        <div class="center">
+          <textarea id="body" placeholder=" An Encouraging Message..." name="body" required></textarea>
+        </div>
+        <div class="center">
+              <button  class="update">Update</button>
+        </div>
+      </form>
+      <button id="btn" class="update">Update</button>
+    
+    </div>
+    <%- include('./partials/footer.ejs') %>
+
+
+<script>
+
+const upDate = document.getElementById('btn');
+    upDate.addEventListener('click', (e) => {
+        const endpoint = `/blogs/663f707d2909a0c2c22e2ee1   ` // `/blogs/${upDate.dataset.doc}`;
+
+        fetch(endpoint, {
+            method: 'PUT'
+        })
+        .then((response) => response.json())
+        .then((data) => window.location.href = data.redirect)
+        .catch(err => console.log(err))
+    });
+</script>
+
+    </div>
+</body>
+</html>

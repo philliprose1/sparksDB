@@ -1,0 +1,33 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %> <!-- head.js found in partials folder-->
+<body>
+    <div class="title">
+        <h1>OUTAGE STATUS</h1>
+    </div>
+    <%- include('./partials/nav.ejs') %> <!-- nav.js found in partials folder-->
+
+    <div class="bg-posts">
+    <div class="blog-content">
+        <h2>Products</h2>
+
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+     <a class="link" href="/blogs/<%= blog._id %>" >          
+            <h3 class="blog-title"><%= blog.title %></h3>
+            <p class="dateLabel">Outage Timestamp :</p>
+            <p class="snippet"><%= blog.createdAt %></p>
+            <p class="dateLabel">Product ETA:</p>
+            <p class="snippet"><%= blog.snippet %></p>
+            
+
+    </a>    
+       <% }) %>     
+<% } else { %>
+    <p>No Outages Reported...</p>
+    <% } %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>

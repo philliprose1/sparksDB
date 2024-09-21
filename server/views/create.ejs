@@ -1,0 +1,33 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %> <!-- head.js found in partials folder-->
+<body>
+  <div class="title">
+    <h1>ADD PRODUCT</h1>
+   </div> 
+    <%- include('./partials/nav.ejs') %> <!-- nav.js found in partials folder-->
+<div class="bg">
+    <div class="create-content">
+      <form action="/blogs" method="POST">
+        <div class="center-label">
+            <label for="title">Product:</label>
+            <input type="text" placeholder=" Product Name" id="title" name="title" required>
+        </div>
+        <div class="center-label">
+            <label for="snippet">ETA:</label>
+            <input type="date" placeholder=" Description" id="snippet" name="snippet" required>
+        </div>
+        <div class="center">
+            <label for="body">Details :</label>
+        </div>
+        <div class="center">
+          <textarea id="body" placeholder=" Outage Details..." name="body" required></textarea>
+        </div>
+        <div class="center">
+              <button>Submit</button>
+        </div>
+      </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>

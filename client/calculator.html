@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="calculator.css">
+  
+    </head>
+ <body id="body">
+     <div id="theme">
+        <div  id="title">                    <!-- class="crt"   -->
+            <h1>Water Calculator &#128241;</h1>
+            </div>
+     </div>
+                                <!-- 5 gallon plastic calculator-->
+    <div class="border">
+            <div class="cal">
+                <div>
+                    <p class="calTitle"><b>5 Gallon Plastic - 40 per Rack</b></p>
+                    <p><b>Enter Number of Racks...</b></p>
+                        <!-- Crystal -->
+                    <label for="baseACrystal">Enter 5g Crystal Fresh Base Total:</label><br>
+                        <input id="baseACrystal" type="number"   placeholder="Enter Base Total">
+                    <div>
+                        <button type="button" id="countC" onclick="crystal5Gallon()">Get Answer</button>
+                        <button type="button" id="clearCrystal">Clear</button>  
+                 </div>
+                        
+                <div class="answerdiv">
+                    <p id="baseCrystal" class="answer"></p>
+                </div>
+
+                <div class="answerdiv">
+                    <p id="rowCrystal" class="answer"></p>
+                </div>
+
+                <!-- primo -->
+                
+                <label for="baseAPrimo">Enter 5g Primo Base Total:</label><br>
+                <input id="baseAPrimo" type="number"   placeholder="Enter Base Total">
+            <div>
+                <button type="button" id="countP" onclick="primo5Gallon()">Get Answer</button>
+                <button type="button" id="clearPrimo">Clear</button> 
+            </div>
+        <div class="answerdiv">
+            <p id="basePrimo" class="answer"></p>
+        </div>
+
+        <div class="answerdiv">
+            <p id="rowPrimo" class="answer"></p>
+        </div>
+                        <!-- Spring -->
+        <label for="baseASpring">Enter 5g Spring Base Total:</label><br>
+        <input id="baseASpring" type="number"   placeholder="Enter Base Total">
+    <div>
+        <button type="button" id="countS" onclick="spring5Gallon()">Get Answer</button>
+        <button type="button" id="clearSpring">Clear</button>  
+ </div>
+        
+<div class="answerdiv">
+    <p id="baseSpring" class="answer"></p>
+</div>
+
+<div class="answerdiv">
+    <p id="rowSpring" class="answer"></p>
+</div>
+
+                            <!-- Distilled -->
+
+            <label for="baseADis">Enter 5g Distilled Base Total:</label><br>
+            <input id="baseADis" type="number"   placeholder="Enter Base Total">
+            <div>
+            <button type="button" id="countD" onclick="dis5Gallon()">Get Answer</button>
+            <button type="button" id="clearDis">Clear</button> 
+            </div>
+            <div class="answerdiv">
+            <p id="baseDis" class="answer"></p>
+            </div>
+
+            <div class="answerdiv">
+            <p id="rowDis" class="answer"></p>
+            </div>
+
+            <div>
+                <button type="button" id="clearAll5">Clear All 5g</button> 
+            </div>
+                                
+            </div>
+        </div>
+</div>
+                    <!-- 3 gallon plastic calculator-->
+<div class="border">
+    <div class="cal">
+        <div>
+            <p class="calTitle"><b>3 Gallon Plastic - 60 per Rack</b></p>
+            <p><b>Enter Number of Racks...</b></p>
+
+            <label for="baseA3">Enter 3g Crystal Fresh Base Total:</label><br>
+            <input id="baseA3" type="number"   placeholder="Enter Base Total">
+    
+            <div>
+                <button type="button" id="count3" onclick="crystal3Gallon()">Get Answer</button>
+                <button type="button" id="clear3">Clear</button>   
+            </div>
+        <div class="answerdiv">
+            <p id="base3" class="answer"></p>
+        </div>
+
+        <div class="answerdiv">
+            <p id="row3" class="answer"></p>
+        </div>
+
+
+                    <!-- 3g primo plus -->
+
+                    <label for="baseA3P0">Enter 3g Primo Plus Base Total:</label><br>
+                    <input id="baseA3P0" type="number"   placeholder="Enter Base Total">
+            
+                    <div>
+                        <button type="button" id="countP3" onclick="primo3Gallon()">Get Answer</button>
+                        <button type="button" id="clear3P0">Clear</button>  
+                    </div>
+                <div class="answerdiv">
+                    <p id="base3P0" class="answer"></p>
+                </div>
+        
+                <div class="answerdiv">
+                    <p id="row3P0" class="answer"></p>
+                </div>
+        
+        
+                <div>
+                    <button type="button" id="clearAll3">Clear All 3G</button>       
+                </div>
+        
+    </div>
+</div>
+
+</div>
+                             <!-- 5 gallon glass calculator-->
+                             <div class="border">
+                                <div class="cal">
+                                    <div>
+                                        <p class="calTitle"><b>5 Gallon Glass - 30 per Rack</b></p>
+                                        <p><b>Enter Number of Racks...</b></p>
+
+                                        <label for="baseAGlass">Enter MNT Valley Spring Base Total:</label><br>
+                                        <input id="baseAGlass" type="number"   placeholder="Enter Base Total">
+                                
+                                        <div>
+                                    <button type="button" id="count5F" onclick="glass5G()">Get Answer</button>
+                                            </div>
+                                    <div class="answerdiv">
+                                        <p id="baseGlass" class="answer"></p>
+                                    </div>
+                    
+                                    <div class="answerdiv">
+                                        <p id="rowGlass" class="answer"></p>
+                                    </div>
+                    
+                    
+                                    <div>
+                                        <button type="button" id="clearGlass">Clear</button>       
+                                    </div>
+                                    
+
+
+                                </div>
+                            </div>
+                    </div>
+
+   <!-- 2.5 gallon glass full calculator-->
+   <div class="border">
+    <div class="cal">
+        <div>
+            <p class="calTitle"><b>2.5g Glass Spring - 45 per Rack</b></p>
+            <p><b>Enter Number of Racks...</b></p>
+            <label for="baseAGlass3g">Enter 2.5 Spring Base Total:</label><br>
+            <input id="baseAGlass3g" type="number"   placeholder="Enter Base Total">
+    
+            <div>
+        <button type="button" id="count25F" onclick="glass3G()">Get Answer</button>
+                </div>
+        <div class="answerdiv">
+            <p id="baseGlass3g" class="answer"></p>
+        </div>
+
+        <div class="answerdiv">
+            <p id="rowGlass3g" class="answer"></p>
+        </div>
+
+
+        <div>
+            <button type="button" id="clearGlass3g">Clear</button>       
+        </div>
+        
+    </div>
+</div>
+
+</div>                 
+                                        <!-- 5g glass empty calculator-->
+                    <div class="border">
+                        <div class="cal">
+                            <div>
+                                <p class="calTitle"><b>5G Glass Empty  - 42 per Rack</b></p>
+                                <p><b>Enter Number of Racks...</b></p>
+                                <label for="baseAGlassMt5">Enter MNT 5 EMT Base Total (Outside):</label><br>
+                                <input id="baseAGlassMt5" type="number"   placeholder="Enter Base Total">
+                        
+                                <div>
+                            <button type="button" id="count5M" onclick="glassEMT5G()">Get Answer</button>
+                                    </div>
+                            <div class="answerdiv">
+                                <p id="baseGlassMt5" class="answer"></p>
+                            </div>
+                    
+                            <div class="answerdiv">
+                                <p id="rowGlassMt5" class="answer"></p>
+                            </div>
+                    
+                    
+                            <div>
+                                <button type="button" id="clearGlassMt5">Clear</button>       
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    </div>
+
+             <!-- 2.5 gallon glass empty calculator-->
+             <div class="border">
+                <div class="cal">
+                    <div>
+                        <p class="calTitle"><b>2.5g Glass Empty - 63 per Rack</b></p>
+                        <p><b>Enter Number of Racks...</b></p>
+                        <label for="baseAGlassMt3">Enter MNT 2.5 EMT Base Total (Outside):</label><br>
+                        <input id="baseAGlassMt3" type="number"   placeholder="Enter Base Total">
+                
+                        <div>
+                    <button type="button" id="count25M" onclick="glassEMT3G()">Get Answer</button>
+                            </div>
+                    <div class="answerdiv">
+                        <p id="baseGlassMt3" class="answer"></p>
+                    </div>
+            
+                    <div class="answerdiv">
+                        <p id="rowGlassMt3" class="answer"></p>
+                    </div>
+            
+            
+                    <div>
+                        <button type="button" id="clearGlassMt3">Clear</button>       
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+                                         <!-- .5 Liters calculator-->
+                                         <div class="border">
+                                            <div class="cal">
+                                                <div>
+                                                    <p class="calTitle"><b>.5 Liter PET - 84 per Pallet</b></p>
+                                                    <p><b>Enter Number of Pallets...</b></p>
+                                                    <label for="baseA16">Enter 1/2 Liters Base Total:</label><br>
+                                                    <input id="baseA16" type="number"   placeholder="Enter Base Total">
+                                            
+                                                    <div>
+                                                <button type="button" id="count16Pet" onclick="count16Pet()">Get Answer</button>
+                                                        </div>
+                                                <div class="answerdiv">
+                                                    <p id="base16" class="answer"></p>
+                                                </div>
+                                
+                                                <div class="answerdiv">
+                                                    <p id="row16" class="answer"></p>
+                                                </div>
+                                
+                                
+                                                <div>
+                                                    <button type="button" id="clear16">Clear</button>       
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                </div>
+                                                    <!-- 10oz PET calculator-->
+                                <div class="border">
+                                    <div class="cal">
+                                        <div>
+                                            <p class="calTitle"><b>10oz PET  - 120 per Pallet</b></p>
+                                            <p><b>Enter Number of Pallets...</b></p>
+                                            <label for="baseA10">Enter 10oz Base Total:</label><br>
+                                            <input id="baseA10" type="number"   placeholder="Enter Base Total">
+                                    
+                                            <div>
+                                        <button type="button" id="count10Pet" onclick="count10Pet()">Get Answer</button>
+                                                </div>
+                                        <div class="answerdiv">
+                                            <p id="base10" class="answer"></p>
+                                        </div>
+                                
+                                        <div class="answerdiv">
+                                            <p id="row10" class="answer"></p>
+                                        </div>
+                                
+                                
+                                        <div>
+                                            <button type="button" id="clear10">Clear</button>       
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                          
+<div class="center">
+    <table id="table1" style="color:limegreen">
+    <th style="text-align: center;">Ground Totals</th>
+    <tr>
+        <th id="date"></th>
+        <th>Racks</th>
+        <th> </th>
+        <th>Bottles</th>
+    </tr>
+    <tr>
+<th>Crystal Fresh</th>
+<td id="rackTotalCrystal">data</td>
+<td></td>
+<td id="crystalTotal">data</td>
+</tr>
+<tr>
+    <th>Primo</th>
+    <td id="rackTotalPrimo">data</td>
+    <td></td>
+    <td id="primoTotal">data</td>
+</tr>
+<tr>
+    <th>Spring</th>
+    <td id="rackTotalSpring">data</td>
+    <td></td>
+    <td id="springTotal">data</td>
+</tr>
+<tr>
+    <th>Distilled</th>
+    <td id="rackTotalDis">data</td>
+    <td></td>
+    <td id="disTotal">data</td>
+</tr> 
+<tr>
+    <th>3 Gal Crystal</th>
+    <td id="rackTotal3">data</td>
+    <td></td>
+    <td id="3Total">data</td>
+</tr>
+<tr>
+    <th>3 Gal Primo Plus</th>
+    <td id="rackTotal3P0">data</td>
+    <td></td>
+    <td id="3P0Total">data</td>
+</tr> 
+<tr>
+    <th>...</th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th>MNT Valley Spring 5g</th>
+    <td id="rackTotalGlass">data</td>
+    <td></td>
+    <td id="glassTotal">data</td>
+</tr>
+<tr>
+    <th>MNT Valley Spring 2.5g</th>
+    <td id="rackTotalGlass3g">data</td>
+    <td></td>
+    <td id="glassTotal3g">data</td>
+</tr>
+<tr>
+    <th>MNT 5g EMPTY Outside</th>
+    <td id="rackTotalGlassMt5">data</td>
+    <td></td>
+    <td id="glassTotalMt5">data</td>
+</tr>
+<tr>
+    <th>MNT 2.5g EMPTY Outside</th>
+    <td id="rackTotalGlassMt3">data</td>
+    <td></td>
+    <td id="glassTotalMt3">data</td>
+</tr>  
+<tr>
+    <th></th>
+    <th>Pallet</th>
+    <th>Bottles</th>
+    <th>Cases</th>
+</tr>  
+<tr>
+    <th>1/2 Liters</th>
+    <td id="rackTotal16">data</td>
+    <td id="bottle16">data</td>
+    <td id="total16">data</td>
+</tr> 
+<tr>
+    <th>10 oz Bottles</th>
+    <td id="rackTotal10">data</td>
+    <td id="bottle10">data</td>
+    <td id="total10">data</td>
+</tr>
+    </table>   
+
+</div>
+
+<div class="center">
+    <button type="button" id="updateTextBox">Build Text Box</button>
+</div>
+
+<div class="center" style="padding:5px;">
+    <button onclick="copyTable()">Copy Table to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox"></textarea>
+</div>
+
+<hr/>
+<div class="center" style="padding:5px;">
+    <button onclick="copyC()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBoxC"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copyP()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBoxP"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copyS()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBoxS"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copyD()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBoxD"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy3()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox3"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copyP3()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBoxP3"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy5F()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox5F"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy25F()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox25F"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy5M()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox5M"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy25M()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox25M"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy16()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox16"></textarea>
+</div>
+<div class="center" style="padding:5px;">
+    <button onclick="copy10()">Copy to Clipboard</button>
+</div>
+<div class="center">
+    <textarea id="textBox10"></textarea>
+</div>
+
+<div id="span" style="margin-bottom: 4em;" class="center">
+<span style="color:green;" id="clipboard">Nothing Copied Yet...</span>
+</div>
+
+
+
+<footer>
+    <button id="footerLink"> <a href="/client/index.html">&#129302;</a></button>  
+</footer>
+
+<script src="calculator.js"></script>
+ </body>
+</html>
